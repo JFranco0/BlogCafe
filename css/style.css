@@ -1,0 +1,146 @@
+:root {
+    --fuenteheading: 'PT Sans', 'sans-serif';
+    --fuenteparrafos: 'Open Sans', 'sans-serif';
+
+    --primario:#784D3C;
+    --blanco: #FFFFFF;
+    --negro: #000000;
+}
+
+html {
+    box-sizing:border-box;
+    font-size: 62.5%; /* el border-box aplica a todo el HTML Y el font-size reduce el tamanho de todos los elementos (truco para utilizar mejor los rem)*/
+}
+
+*,*:before,*:after {
+    box-sizing: inherit;
+} /*tratar de usar esto en todos los proyectos*/
+
+/*BODY*/
+body{
+    font-family: var(--fuenteparrafos);
+    font-size: 1.6rem;
+    line-height: 2; /*interlineado, como es un blog es mejor si esta medio separado*/
+
+}
+
+/*GLOBAL*/
+.contenedor{
+    max-width: 120rem;
+    width:90%;
+    margin: 0 auto;
+}
+
+a{
+    text-decoration: none;
+}
+
+h1,h2,h3,h4{
+    font-family: var(--fuenteheading);
+    line-height: 1.2;
+}
+h1{
+    font-size: 4.8rem;
+}
+h2{
+    font-size: 4rem;
+}
+h3{
+    font-size: 3.2rem;
+}
+h4{
+    font-size: 2.5rem;
+}
+img {
+    max-width: 100%;
+}
+
+/*UTILITIES*/
+
+.no-margin {
+    margin: 0;
+}
+.no-padding{
+    padding: 0;
+}
+.centrar-texto{
+    text-align: center;
+}
+
+
+
+
+/*header*/
+
+.header {
+    background-image: url(../img/banner.jpg);
+    background-size: cover;
+    background-position: center center;
+    background-repeat: no-repeat;
+    height: 60rem;
+}
+ /* COMPORTAMIENTO DE BACKGROUND Y LA BARRA SUPERIOR*/
+
+@media (min-width: 768px) {
+.barra {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+}
+
+}        
+
+.logo__name{
+    padding-top: 4rem;
+    color: var(--blanco);
+    font-weight: 400;
+}
+
+.logo__bold {
+    font-weight: 700;
+}
+
+
+.navegacion__link {
+    display: block;
+    font-size: 1.8rem;
+    text-align: center;
+    color: var(--blanco);
+
+    
+}
+
+@media (min-width: 768px) {
+    .navegacion {
+        display: flex;
+        gap: 2rem   ;
+    }
+        
+}
+ /*TEXTO CENTRAL DEL HEADER*/
+.mensaje {
+    margin-top:  10rem;
+    color: var(--blanco);
+    align-items: center;
+}
+
+.mensaje__texto{
+    column-gap: 2rem;
+}
+
+/*CUERPOR DEL BLOG*/
+@media (min-width: 768px) {
+    .cuerpo {
+        display: grid ;
+        grid-template-columns: 2fr 1fr;
+        margin: 0 auto;
+        max-width: 120rem;
+        column-gap: 4rem;
+    }  
+
+}
+
+.blog__imagen {
+    max-width: 100%;
+}
