@@ -56,6 +56,12 @@ h4 {
 img {
     max-width: 100%;
 }
+/* //////////////////////UTILIDADES//////////////////////////// */
+.no_margin{
+    margin: 0 auto;
+}
+
+
 
 /* ///////////////////HEADER///////////////// */
 /*  EDICION DE TODO EL HEADER   */
@@ -92,7 +98,7 @@ img {
     font-size: 2rem;
     text-align: center;
     color: var(--blanco);
-}
+}   
 /* /////////////////////TEXTO CENTRAL/////////////////////////// */
  /*TEXTO CENTRAL DEL HEADER*/
 .mensaje {
@@ -115,6 +121,30 @@ img {
 
 .blog__imagen {
     max-width: 100%;
+    margin-top: 2rem;
+}
+
+/* //////////////////BOTONES///////////////////////// */
+
+.boton__articulo{
+    background-color: var(--blanco);
+}
+.boton__primario{
+    background-color: var(--negro);
+    color: var(--blanco);
+    padding: 2rem;
+}
+
+
+.boton__aside{
+    background-color: var(--primario);
+    text-align: center;
+}
+.boton__secundario{
+    font-weight: bold;
+    background-color: var(--primario);
+    color: var(--blanco);
+
 }
 
 /* /////////////////////////////// footer //////////////////////// */
@@ -123,8 +153,13 @@ img {
 }
 
 .footer{
-    padding: 7rem;
+    padding: 5rem;
+    margin-top: 2rem;
 }
+
+
+
+
 
 
 
