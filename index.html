@@ -1,18 +1,22 @@
 <!DOCTYPE html>
 <html lang="en">
 
+<!-- TODO LO QUE IRA REALACIONADO A MI PAGINA DE CAFE -->
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>BlogDeCafe</title>
 
-    <!--Estilos-->
-    <link rel="preload" href="./css/style.css" as="style">
-    <link rel="stylesheet" href="./css/style.css">
 
+    <!-- NOTA MENTAL SIEMPRE CARGAR PRIMERO EL NORMALIZE -->
     <link rel="preload" href="./css/normalize.css" as="style">
     <link rel="stylesheet" href="./css/normalize.css">
 
+    <link rel="preload" href="./css/style.css" as="style">
+    <link rel="stylesheet" href="./css/style.css">
+
+<!-- FUENTES -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link
@@ -20,20 +24,18 @@
         rel="stylesheet">
 </head>
 
+<!-- EL CUERPO COMPLETO DE MI PAGINA WEB -->
 
+<!-- ///////////////////////////////////////////////////BODY///////////////////////////////////////////////////////////// -->
 <body>
-    <header class="header centrar-texto">
-
+    <header class="header">
         <div class="contenedor">
-
             <div class="barra">
-
                 <a class="barra__logo" href="./index.html">
 
-                    <h1 class="logo__name no-margin centrar-texto">Blog<span class="logo__bold ">DeCafé</span></h1>
+                    <h1 class="barra__logo_blog">Blog<span class="barra__logo_decafe ">DeCafé</span></h1>
 
                 </a>
-
 
                 <nav class="navegacion">
                     <a class="navegacion__link" href="#">Nosotros</a>
@@ -43,33 +45,48 @@
             </div>
         </div>
 
-        <div class="mensaje no-margin centrar-texto">
-            <h2 class="mensaje__texto no-margin">Blog de Café con consejos y cursos</h2>
-            <p class="mensaje__parrafo no-margin">Aprende de los expertos con las mejores recetas y concejos </p>
+        <div class="mensaje">
+            <h2 class="mensaje__texto">Blog de Café con consejos y cursos</h2>
+            <p class="mensaje__parrafo">Aprende de los expertos con las mejores recetas y concejos </p>
         </div>
+
     </header>
+
     <!-- Fin del header-->
 
 
-
-    <div class="cuerpo">
+    <div class="cuerpo contenedor">
 
         <main class="main">
             <div class="blog">
 
+
+                <!-- ///////////////////// COMIENZO DE CUERPO //////////////////////////// -->
+
                 <h3>Nuestro BLog</h3>
-
-
                 <article class="blog__entrada">
                     <div class="blog__imagen">
                         <img class="blog__imagen" src="./img/blog1.jpg" alt="IMAGEN DE CAFE :)">
                     </div>
-                    
+
                     <h4>Tipos de grano de cafe</h4>
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptate, rerum, reprehenderit
+                            consequatur perferendis officia, vitae fuga animi temporibus itaque atque reiciendis ea
+                            excepturi! Molestias aperiam fugiat deleniti laudantium atque numquam?</p>
+                        <a class="enlace" ="ENTRADA">LEER ENTRADA</a>
+                </article>
+
+
+                <article class="blog__entrada">
+                    <div class="blog__imagen">
+                        <img class="blog__imagen" src="./img/blog1.jpg" alt="IMAGEN DE CAFE :">
+                    </div>
+
+                    <h4>3 Delciosas Recetas</h4>
                     <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptate, rerum, reprehenderit
                         consequatur perferendis officia, vitae fuga animi temporibus itaque atque reiciendis ea
                         excepturi! Molestias aperiam fugiat deleniti laudantium atque numquam?</p>
-                    <a href="ENTRADA">LEER ENTRADA</a>
+                    <a class="enlace" href="ENTRADA">LEER ENTRADA</a>
                 </article>
 
                 <article class="blog__entrada">
@@ -77,42 +94,31 @@
                         <img class="blog__imagen" src="./img/blog1.jpg" alt="IMAGEN DE CAFE :)">
                     </div>
 
-                    <h4>Tipos de grano de cafe</h4>
+                    <h4>Beneficios para la salud</h4>
                     <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptate, rerum, reprehenderit
                         consequatur perferendis officia, vitae fuga animi temporibus itaque atque reiciendis ea
                         excepturi! Molestias aperiam fugiat deleniti laudantium atque numquam?</p>
-                    <a href="ENTRADA">LEER ENTRADA</a>
-                </article>
-
-                <article class="blog__entrada">
-                    <div class="blog__imagen">
-                        <img class="blog__imagen" src="./img/blog1.jpg" alt="IMAGEN DE CAFE :)">
-                    </div>
-
-                    <h4>Tipos de grano de cafe</h4>
-                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptate, rerum, reprehenderit
-                        consequatur perferendis officia, vitae fuga animi temporibus itaque atque reiciendis ea
-                        excepturi! Molestias aperiam fugiat deleniti laudantium atque numquam?</p>
-                    <a href="ENTRADA">LEER ENTRADA</a>
+                    <a class="enlace" href="ENTRADA">LEER ENTRADA</a>
                 </article>
 
             </div>
 
         </main>
 
+
         <aside>
             <ul>
                 <li>
                     <h4>Tecnicas extraccion de cafe</h4>
-                    <p>Precio:<span>Gratis</span></p>
-                    <p>Precio:<span>Gratis</span></p>
+                    <p>Precio:<span> Gratis</span></p>
+                    <p>Precio:<span> Gratis</span></p>
                     <a href="ENTRADA">MAS INFORMACION SOBRE NUESTROS CURSOS</a>
                 </li>
 
                 <li>
                     <h4>Tecnicas extraccion de cafe</h4>
-                    <p>Precio:<span>Gratis</span></p>
-                    <p>Precio:<span>Gratis</span></p>
+                    <p>Precio:<span> Gratis</span></p>
+                    <p>Precio:<span> Gratis</span></p>
                     <a href="ENTRADA">MAS INFORMACION SOBRE NUESTROS CURSOS</a>
                 </li>
             </ul>
@@ -126,19 +132,16 @@
 
 
 
-<footer>
-    <div class="contenedor">
 
-        <div class="barra">
 
+<footer class="footer-conteneror">
+    <div class="contenedor ">
+        <div class="footer">
             <a class="barra__logo" href="./index.html">
 
-                <h1 class="logo__name no-margin centrar-texto">Blog<span class="logo__bold ">DeCafé</span></h1>
+                <h1 class="barra__logo_blog">Blog<span class="barra__logo_decafe ">DeCafé</span></h1>
 
             </a>
-
-
-
 
             <nav class="navegacion">
                 <a class="navegacion__link" href="#">Nosotros</a>

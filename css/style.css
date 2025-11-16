@@ -12,65 +12,53 @@ html {
     font-size: 62.5%; /* el border-box aplica a todo el HTML Y el font-size reduce el tamanho de todos los elementos (truco para utilizar mejor los rem)*/
 }
 
+/* inherit hace que un elemento herede el valor del box sizing*/
+
 *,*:before,*:after {
     box-sizing: inherit;
-} /*tratar de usar esto en todos los proyectos*/
+} 
+
+
 
 /*BODY*/
 body{
     font-family: var(--fuenteparrafos);
     font-size: 1.6rem;
     line-height: 2; /*interlineado, como es un blog es mejor si esta medio separado*/
-
 }
 
 /*GLOBAL*/
 .contenedor{
-    max-width: 120rem;
-    width:90%;
+    max-width: min(90%, 120rem);
     margin: 0 auto;
 }
 
 a{
     text-decoration: none;
 }
-
 h1,h2,h3,h4{
     font-family: var(--fuenteheading);
     line-height: 1.2;
 }
-h1{
+
+h1 {
     font-size: 4.8rem;
 }
-h2{
+h2 {
     font-size: 4rem;
 }
-h3{
+h3 {
     font-size: 3.2rem;
 }
-h4{
-    font-size: 2.5rem;
+h4 {
+    font-size: 2.8rem;
 }
 img {
     max-width: 100%;
 }
 
-/*UTILITIES*/
-
-.no-margin {
-    margin: 0;
-}
-.no-padding{
-    padding: 0;
-}
-.centrar-texto{
-    text-align: center;
-}
-
-
-
-
-/*header*/
+/* ///////////////////HEADER///////////////// */
+/*  EDICION DE TODO EL HEADER   */
 
 .header {
     background-image: url(../img/banner.jpg);
@@ -79,68 +67,106 @@ img {
     background-repeat: no-repeat;
     height: 60rem;
 }
- /* COMPORTAMIENTO DE BACKGROUND Y LA BARRA SUPERIOR*/
 
-@media (min-width: 768px) {
-.barra {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
+
+ /* COMPORTAMIENTO DE BACKGROUND Y LA BARRA SUPERIOR*/
+.barra{
+    padding-top: 4rem;
 
 }
 
-}        
 
-.logo__name{
-    padding-top: 4rem;
+.barra__logo_blog{
+    text-align: center;
+    margin: 0 auto;
     color: var(--blanco);
     font-weight: 400;
 }
 
-.logo__bold {
+.barra__logo_decafe {
     font-weight: 700;
+
 }
-
-
 .navegacion__link {
     display: block;
-    font-size: 1.8rem;
+    font-size: 2rem;
     text-align: center;
     color: var(--blanco);
-
-    
 }
-
-@media (min-width: 768px) {
-    .navegacion {
-        display: flex;
-        gap: 2rem   ;
-    }
-        
-}
+/* /////////////////////TEXTO CENTRAL/////////////////////////// */
  /*TEXTO CENTRAL DEL HEADER*/
 .mensaje {
-    margin-top:  10rem;
+    margin: 10rem 0;
     color: var(--blanco);
-    align-items: center;
-}
+    text-align: center;
 
+}
 .mensaje__texto{
+    margin: 0;
     column-gap: 2rem;
+}
+.mensaje__parrafo{
+    margin: 0;
+    align-items: cent;
 }
 
 /*CUERPOR DEL BLOG*/
+
+
+.blog__imagen {
+    max-width: 100%;
+}
+
+/* /////////////////////////////// footer //////////////////////// */
+.footer-conteneror{
+    background-color: #000000;
+}
+
+.footer{
+    padding: 7rem;
+}
+
+
+
+/*  RESPONSIVE DESIG     */
+
 @media (min-width: 768px) {
-    .cuerpo {
+
+    /* PARTE DEL HEADER DE LA PAGINA */
+
+    .barra {
+        margin: 0;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    
+    }
+
+
+    .navegacion {
+        display: flex;
+        gap: 2rem   ;
+     }
+
+     /* PARTE DEL CUERPO GENERAL DE LA PAGINA */
+     .cuerpo {
         display: grid ;
         grid-template-columns: 2fr 1fr;
         margin: 0 auto;
         max-width: 120rem;
         column-gap: 4rem;
-    }  
+    } 
 
-}
+    .contenedor{
+        max-width: min(90%, 120rem);
+        margin: 0 auto;
+    }
+    
+    .footer{
+        margin: 0;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
 
-.blog__imagen {
-    max-width: 100%;
-}
+    }
+ }
