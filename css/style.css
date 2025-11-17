@@ -134,13 +134,24 @@ img {
     color: var(--blanco);
     padding: 2rem;
 }
+.aside__precio{
+    font-weight: bold;
+}
 
+.aside__span{
+    font-weight: 100    ;
+}
 
 .boton__aside{
     background-color: var(--primario);
     text-align: center;
+    padding: 2rem 0;
+
+
 }
-.boton__secundario{
+
+
+.aside__letra{
     font-weight: bold;
     background-color: var(--primario);
     color: var(--blanco);
