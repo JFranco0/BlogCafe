@@ -1,6 +1,6 @@
 :root {
-    --fuenteheading: 'PT Sans', 'sans-serif';
-    --fuenteparrafos: 'Open Sans', 'sans-serif';
+    --fuente: "Nunito", sans-serif;
+    
 
     --primario:#784D3C;
     --blanco: #FFFFFF;
@@ -22,7 +22,8 @@ html {
 
 /*BODY*/
 body{
-    font-family: var(--fuenteparrafos);
+    font-family: var(--fuente);
+    font-weight: 400;
     font-size: 1.6rem;
     line-height: 2; /*interlineado, como es un blog es mejor si esta medio separado*/
 }
@@ -37,7 +38,8 @@ a{
     text-decoration: none;
 }
 h1,h2,h3,h4{
-    font-family: var(--fuenteheading);
+    font-family: var(--fuente);
+    font-weight: 800;
     line-height: 1.2;
 }
 
@@ -57,8 +59,12 @@ img {
     max-width: 100%;
 }
 /* //////////////////////UTILIDADES//////////////////////////// */
+
 .no_margin{
-    margin: 0 auto;
+    margin: 0;
+}
+.centrar_texto{
+    text-align: center;
 }
 
 
@@ -130,6 +136,7 @@ img {
     background-color: var(--blanco);
 }
 .boton__primario{
+    border-radius: 1rem;
     background-color: var(--negro);
     color: var(--blanco);
     padding: 2rem;
@@ -143,11 +150,17 @@ img {
 }
 
 .boton__aside{
+    border-radius: 1rem;
     background-color: var(--primario);
     text-align: center;
     padding: 2rem 0;
 
 
+}
+.cuerpo__contenedor{
+    margin: 0 auto;
+    max-width: min(90%, 120rem);
+    
 }
 
 
@@ -195,11 +208,11 @@ img {
      }
 
      /* PARTE DEL CUERPO GENERAL DE LA PAGINA */
-     .cuerpo {
+     .cuerpo__contenedor {
         display: grid ;
         grid-template-columns: 2fr 1fr;
-        margin: 0 auto;
-        max-width: 120rem;
+        margin: 0 auto 4rem auto;
+        max-width: min(90%, 120rem);
         column-gap: 4rem;
     } 
 
@@ -215,4 +228,23 @@ img {
         align-items: center;
 
     }
+ }
+
+
+
+
+ /* ///////////////////////////////////// CONTACTO////////////////////////////////////////// */
+
+ .bg_img{
+    background-image: url(../img/contacto.jpg);
+    height: 40rem;
+    background-size: cover;
+    background-repeat: no-repeat ;
+    margin: 0 auto;
+    
+ }
+
+ .formulario{
+    /* margin: 0 auto; */
+    text-align: center;
  }
