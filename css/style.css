@@ -5,6 +5,7 @@
     --primario:#784D3C;
     --blanco: #FFFFFF;
     --negro: #000000;
+    --gris: #B3B3B3;
 }
 
 html {
@@ -124,7 +125,6 @@ img {
 
 /*CUERPOR DEL BLOG*/
 
-
 .blog__imagen {
     max-width: 100%;
     margin-top: 2rem;
@@ -136,6 +136,8 @@ img {
     background-color: var(--blanco);
 }
 .boton__primario{
+    display: block;
+    text-align: center;
     border-radius: 1rem;
     background-color: var(--negro);
     color: var(--blanco);
@@ -187,6 +189,79 @@ img {
 
 
 
+ /* ///////////////////////////////////// CONTACTO////////////////////////////////////////// */
+
+ .bg_img{
+    background-image: url(../img/contacto.jpg);
+    border-radius: 2rem;
+    height: 40rem;
+    background-size: cover;
+    background-repeat: no-repeat ;
+    margin: 0 auto;
+    
+ }
+ /* zona formularios */
+
+ .formulario{
+    border-radius: 2rem;
+    width: 90%;
+    background-color: #FFFFFF;
+    margin: -10rem auto 10rem auto;
+    padding: 5rem;
+    box-shadow: 0 0 10rem 1.8rem rgba(0,0,0,0.2);
+ }
+
+
+ .campo{
+    display: flex;
+    flex-direction: column;
+    width: 90%;
+    margin: 0 auto;
+
+ }
+
+
+ .campo__label{
+    font-weight: 700;
+    font-size: 2rem;
+    text-align: center;
+    
+ }
+
+
+ .campo__field,
+ .campo__field--textareas{
+    text-align: center;
+    margin-bottom: 2rem;
+    border-radius: 1rem;
+    padding: 2rem;
+    border-color: var(--gris);
+    border-width: .3rem;
+    min-width: 100%;
+    max-width: 100%;
+ }
+
+
+ .campo__bonton--enviar{
+    font-weight: 700;
+    padding: 2rem;
+    margin-top: 5rem;
+    margin-bottom: 5rem;
+    border-width: .3rem;
+    border-radius: 1rem;
+ }
+
+
+
+ 
+
+
+
+
+    /* //////////////////////// PAGINA DE CONTACTO //////////////////////// */
+
+
+
 /*  RESPONSIVE DESIG     */
 
 @media (min-width: 768px) {
@@ -215,11 +290,6 @@ img {
         max-width: min(90%, 120rem);
         column-gap: 4rem;
     } 
-
-    .contenedor{
-        max-width: min(90%, 120rem);
-        margin: 0 auto;
-    }
     
     .footer{
         margin: 0;
@@ -227,24 +297,4 @@ img {
         justify-content: space-between;
         align-items: center;
 
-    }
- }
-
-
-
-
- /* ///////////////////////////////////// CONTACTO////////////////////////////////////////// */
-
- .bg_img{
-    background-image: url(../img/contacto.jpg);
-    height: 40rem;
-    background-size: cover;
-    background-repeat: no-repeat ;
-    margin: 0 auto;
-    
- }
-
- .formulario{
-    /* margin: 0 auto; */
-    text-align: center;
- }
+    }}
