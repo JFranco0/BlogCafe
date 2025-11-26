@@ -92,13 +92,15 @@ formulario.addEventListener('submit', function(evento){
 
     const {nombre, input_email, textarea_mensaje} = datos;
 
-    if(nombre=== ''|| input_email=== ''){
-        console.log('una de las casillas estan vacias');
+    if(nombre=== ''|| input_email=== '' || textarea_mensaje===""){
+
+        console.log('todos los campos son obligatorioss');
+        
         return;
     }
     
 
-    console.log(`nombre: ${nombre} , email: ${input_email}}`);
+    console.log(`nombre: ${nombre} , email: ${input_email}, ${mensaje}}`);
     
 //imprimimos los datos que se terminario de guardar del destructuring;
     console.log('DATOS ENVIADOS');
